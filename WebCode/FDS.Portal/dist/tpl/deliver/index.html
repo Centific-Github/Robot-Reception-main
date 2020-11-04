@@ -1,0 +1,93 @@
+<section class="content-header">
+    <h1 ng-i18next>Deliver Contact</h1>
+</section>
+
+<section class="content">
+    <div class="flextable">
+        <div class="flextable-item flextable-primary">
+
+        </div>
+        <div class="flextable-item">
+
+        </div>
+    </div>
+
+    <div class="box box-primary mt-4">
+        <form name="appForm" role="form" class="form-horizontal" novalidate>
+
+            <div class="row">
+                <div class="form-group">
+                    <label class="control-label col-md-3"></label>
+                    <div class=" col-md-5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label class="control-label col-md-3"></label>
+                    <div class=" col-md-5">
+                        <!--图片预览-->
+                        <img id="img-preview" ng-src="{{webDeliver.iconUrl}}" style="max-width:100px;max-height:100px;margin:0 auto;display:inline-block; border-radius:50%;overflow:hidden" >
+                        <button class="btn btn-success right" type="button"
+                                ngf-select="import($file)">
+                            <i class="fa fa-file-image-o"></i>  Upload Picture
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label class="control-label col-md-3">Name</label>
+                    <div class=" col-md-4">
+                        <input name="name" type="text" class="form-control" placeholder="Name" ng-model="webDeliver.name"
+                               ng-maxlength="255" ng-minlength="10" required />
+                        <div ng-messages="appForm.Name.$error" ng-if="appForm.Name.$touched">
+                            <small class="text-danger" ng-message="required">name 必填!</small>
+                            <small class="text-danger" ng-message="maxlength">name 最大长度 255字符</small>
+                            <small class="text-danger" ng-message="minlength">10 characters at least</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label class="control-label col-md-3">Office Phone</label>
+                    <div class=" col-md-4">
+                        <input name="officePhone" type="text" class="form-control" placeholder="Office Phone" ng-model="webDeliver.officePhone" ng-maxlength="255" ng-minlength="6" required />
+                        <div ng-messages="appForm.officePhone.$error" ng-if="appForm.officePhone.$touched">
+                            <small class="text-danger" ng-message="required">psw 必填!</small>
+                            <small class="text-danger" ng-message="maxlength">psw 最大长度 255字符</small>
+                            <small class="text-danger" ng-message="minlength">6 characters at least</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label class="control-label col-md-3">Personal Phone</label>
+                    <div class=" col-md-4">
+                        <input name="personalPhone" type="text" class="form-control" placeholder="Personal Phone" ng-model="webDeliver.personalPhone" ng-maxlength="255" ng-minlength="6" required />
+                        <div ng-messages="appForm.personalPhone.$error" ng-if="appForm.personalPhone.$touched">
+                            <small class="text-danger" ng-message="required">psw 必填!</small>
+                            <small class="text-danger" ng-message="maxlength">psw 最大长度 255字符</small>
+                            <small class="text-danger" ng-message="minlength">6 characters at least</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" ng-click="close()">Cancel</button>
+                <button type="button" class="btn btn-primary" ng-click="ok()" ng-disabled="testForm.$invalid">Save</button>
+            </div>
+        </form>
+        <div class="overlay" ng-show="query.loading">
+            <i class="fa fa-refresh fa-spin"></i>
+        </div>
+
+    </div>
+
+
+</section>
+

@@ -1,0 +1,66 @@
+<section class="content-header">
+    <h1 ng-i18next>App Authorization</h1>
+</section>
+
+<section class="content">
+    <div class="flextable">
+        <div class="flextable-item flextable-primary">
+           
+        </div>
+        <div class="flextable-item">
+           
+        </div>
+    </div>
+
+    <div class="box box-primary mt-4">
+        <form name="appForm" role="form" class="form-horizontal" novalidate>
+
+            <div class="row">
+                <div class="form-group">
+                    <label class="control-label col-md-3"></label>
+                    <div class=" col-md-5">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label class="control-label col-md-3">App Auth Key</label>
+                    <div class=" col-md-4">
+                        <input name="authKey" type="text" class="form-control" placeholder="AuthKey" ng-model="appAuth.authKey"
+                               ng-maxlength="255" ng-minlength="10" required />
+                        <div ng-messages="appForm.authKey.$error" ng-if="appForm.authKey.$touched">
+                            <small class="text-danger" ng-message="required">Account 必填!</small>
+                            <small class="text-danger" ng-message="maxlength">Account 最大长度 255字符</small>
+                            <small class="text-danger" ng-message="minlength">10 characters at least</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label class="control-label col-md-3">App Update Password</label>
+                    <div class=" col-md-4">
+                        <input name="psw" type="text" class="form-control" placeholder="Password" ng-model="appAuth.psw" ng-maxlength="255" ng-minlength="6" required />
+                        <div ng-messages="appForm.psw.$error" ng-if="appForm.psw.$touched">
+                            <small class="text-danger" ng-message="required">psw 必填!</small>
+                            <small class="text-danger" ng-message="maxlength">psw 最大长度 255字符</small>
+                            <small class="text-danger" ng-message="minlength">6 characters at least</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" ng-click="close()">Cancel</button>
+                <button type="button" class="btn btn-primary" ng-click="ok()" ng-disabled="testForm.$invalid">Save</button>
+            </div>
+        </form>
+        <div class="overlay" ng-show="query.loading">
+            <i class="fa fa-refresh fa-spin"></i>
+        </div>
+     
+    </div>
+
+  
+</section>
+

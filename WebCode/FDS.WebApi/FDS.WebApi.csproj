@@ -1,0 +1,245 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.0\FDS.WebApi.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.0\FDS.WebApi.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Files\**" />
+    <Compile Remove="Logs\**" />
+    <Compile Remove="wwwroot\NewFolder\**" />
+    <Content Remove="Files\**" />
+    <Content Remove="Logs\**" />
+    <Content Remove="wwwroot\NewFolder\**" />
+    <EmbeddedResource Remove="Files\**" />
+    <EmbeddedResource Remove="Logs\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder\**" />
+    <None Remove="Files\**" />
+    <None Remove="Logs\**" />
+    <None Remove="wwwroot\NewFolder\**" />
+  </ItemGroup>
+ 
+
+  <ItemGroup>
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Files\images\common\about_ban.jpg" />
+    <None Include="wwwroot\Files\images\common\banner_yd.png" />
+    <None Include="wwwroot\Files\images\common\banner_yd_h.png" />
+    <None Include="wwwroot\Files\images\common\foot_ico1.png" />
+    <None Include="wwwroot\Files\images\common\foot_ico2.png" />
+    <None Include="wwwroot\Files\images\common\foot_ico3.png" />
+    <None Include="wwwroot\Files\images\common\foot_ico4.png" />
+    <None Include="wwwroot\Files\images\common\head_search.jpg" />
+    <None Include="wwwroot\Files\images\common\logo-5.gif" />
+    <None Include="wwwroot\Files\images\common\logo1.jpg" />
+    <None Include="wwwroot\Files\images\common\lunbo1.jpg" />
+    <None Include="wwwroot\Files\images\common\lunbo2.jpg" />
+    <None Include="wwwroot\Files\images\common\lunbo3.png" />
+    <None Include="wwwroot\Files\images\common\quick-ma.jpg" />
+    <None Include="wwwroot\Files\images\common\quick-ma1.jpg" />
+    <None Include="wwwroot\Files\images\common\quick-ma12.jpg" />
+    <None Include="wwwroot\Files\images\common\quick-ma22.jpg" />
+    <None Include="wwwroot\Files\images\else\about_ban.jpg" />
+    <None Include="wwwroot\Files\images\else\about_ico1.png" />
+    <None Include="wwwroot\Files\images\else\about_ico2.png" />
+    <None Include="wwwroot\Files\images\else\about_ico3.png" />
+    <None Include="wwwroot\Files\images\else\about_ico4.png" />
+    <None Include="wwwroot\Files\images\else\about_ico5.png" />
+    <None Include="wwwroot\Files\images\else\about_ico6.png" />
+    <None Include="wwwroot\Files\images\else\about_ico7.png" />
+    <None Include="wwwroot\Files\images\else\about_ico8.png" />
+    <None Include="wwwroot\Files\images\else\about_pic.jpg" />
+    <None Include="wwwroot\Files\images\else\about_yd.png" />
+    <None Include="wwwroot\Files\images\else\activity_pic1.jpg" />
+    <None Include="wwwroot\Files\images\else\activity_pic2.jpg" />
+    <None Include="wwwroot\Files\images\else\activity_pic3.jpg" />
+    <None Include="wwwroot\Files\images\else\activi_ico1.png" />
+    <None Include="wwwroot\Files\images\else\activi_ico2.png" />
+    <None Include="wwwroot\Files\images\else\activi_ico3.png" />
+    <None Include="wwwroot\Files\images\else\adviser_xxfany.jpg" />
+    <None Include="wwwroot\Files\images\else\adviser_youx.png" />
+    <None Include="wwwroot\Files\images\else\apply_bg.jpg" />
+    <None Include="wwwroot\Files\images\else\banner_fany.png" />
+    <None Include="wwwroot\Files\images\else\career_ban.jpg" />
+    <None Include="wwwroot\Files\images\else\contact_ban.jpg" />
+    <None Include="wwwroot\Files\images\else\coope_up_bg.jpg" />
+    <None Include="wwwroot\Files\images\else\coope_up_bg1.jpg" />
+    <None Include="wwwroot\Files\images\else\fuchuang_bg.png" />
+    <None Include="wwwroot\Files\images\else\hirxx_btmico1.png" />
+    <None Include="wwwroot\Files\images\else\hirxx_btmico2.png" />
+    <None Include="wwwroot\Files\images\else\hirxx_btmico3.png" />
+    <None Include="wwwroot\Files\images\else\hirxx_btmico4.png" />
+    <None Include="wwwroot\Files\images\else\hirxx_btmico5.png" />
+    <None Include="wwwroot\Files\images\else\hirxx_btmico6.png" />
+    <None Include="wwwroot\Files\images\else\hirxx_mdebg.jpg" />
+    <None Include="wwwroot\Files\images\else\hirxx_mdeyd.png" />
+    <None Include="wwwroot\Files\images\else\hirxx_pic1.jpg" />
+    <None Include="wwwroot\Files\images\else\hirxx_pic2.jpg" />
+    <None Include="wwwroot\Files\images\else\hir_pic1.jpg" />
+    <None Include="wwwroot\Files\images\else\hir_pic2.jpg" />
+    <None Include="wwwroot\Files\images\else\hir_pic3.jpg" />
+    <None Include="wwwroot\Files\images\else\honor_next.png" />
+    <None Include="wwwroot\Files\images\else\honor_pic.jpg" />
+    <None Include="wwwroot\Files\images\else\honor_prev.png" />
+    <None Include="wwwroot\Files\images\else\honor_xt.jpg" />
+    <None Include="wwwroot\Files\images\else\honor_yd.png" />
+    <None Include="wwwroot\Files\images\else\hr_pic.jpg" />
+    <None Include="wwwroot\Files\images\else\infor_ban.jpg" />
+    <None Include="wwwroot\Files\images\else\intro_ditu.jpg" />
+    <None Include="wwwroot\Files\images\else\intro_erwm.jpg" />
+    <None Include="wwwroot\Files\images\else\intro_tx1.jpg" />
+    <None Include="wwwroot\Files\images\else\intro_tx2.jpg" />
+    <None Include="wwwroot\Files\images\else\intro_tx3.jpg" />
+    <None Include="wwwroot\Files\images\else\intro_tx4.jpg" />
+    <None Include="wwwroot\Files\images\else\join_pic1.jpg" />
+    <None Include="wwwroot\Files\images\else\join_pic2.jpg" />
+    <None Include="wwwroot\Files\images\else\join_pic3.jpg" />
+    <None Include="wwwroot\Files\images\else\join_pic4.jpg" />
+    <None Include="wwwroot\Files\images\else\join_ysj_blue.png" />
+    <None Include="wwwroot\Files\images\else\join_ysj_red.png" />
+    <None Include="wwwroot\Files\images\else\join_zsj_blue.png" />
+    <None Include="wwwroot\Files\images\else\join_zsj_red.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico1.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico10.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico11.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico12.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico13.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico14.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico15.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico16.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico17.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico18.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico19.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico2.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico3.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico4.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico5.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico6.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico7.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico8.png" />
+    <None Include="wwwroot\Files\images\else\mid_ico9.png" />
+    <None Include="wwwroot\Files\images\else\mid_nr2bg.jpg" />
+    <None Include="wwwroot\Files\images\else\mid_nr3jiant.png" />
+    <None Include="wwwroot\Files\images\else\mid_pic1.jpg" />
+    <None Include="wwwroot\Files\images\else\mid_pic2.jpg" />
+    <None Include="wwwroot\Files\images\else\personal.jpg" />
+    <None Include="wwwroot\Files\images\else\person_ico1.jpg" />
+    <None Include="wwwroot\Files\images\else\person_ico10.png" />
+    <None Include="wwwroot\Files\images\else\person_ico11.jpg" />
+    <None Include="wwwroot\Files\images\else\person_ico12.jpg" />
+    <None Include="wwwroot\Files\images\else\person_ico13.jpg" />
+    <None Include="wwwroot\Files\images\else\person_ico14.jpg" />
+    <None Include="wwwroot\Files\images\else\person_ico2.jpg" />
+    <None Include="wwwroot\Files\images\else\person_ico3.jpg" />
+    <None Include="wwwroot\Files\images\else\person_ico4.jpg" />
+    <None Include="wwwroot\Files\images\else\person_ico5.png" />
+    <None Include="wwwroot\Files\images\else\person_ico6.png" />
+    <None Include="wwwroot\Files\images\else\person_ico7.png" />
+    <None Include="wwwroot\Files\images\else\person_ico8.png" />
+    <None Include="wwwroot\Files\images\else\person_ico9.png" />
+    <None Include="wwwroot\Files\images\else\person_mdebg.jpg" />
+    <None Include="wwwroot\Files\images\else\qq.jpg" />
+    <None Include="wwwroot\Files\images\else\ques_sous.png" />
+    <None Include="wwwroot\Files\images\else\ques_wenh.jpg" />
+    <None Include="wwwroot\Files\images\else\service_btbgxt.jpg" />
+    <None Include="wwwroot\Files\images\else\service_btbg_cnr.jpg" />
+    <None Include="wwwroot\Files\images\else\service_btbg_lf.jpg" />
+    <None Include="wwwroot\Files\images\else\service_btbg_rgt.jpg" />
+    <None Include="wwwroot\Files\images\else\service_btxt.png" />
+    <None Include="wwwroot\Files\images\else\short_mdepic.jpg" />
+    <None Include="wwwroot\Files\images\else\short_mde_libg.png" />
+    <None Include="wwwroot\Files\images\else\short_upico1.jpg" />
+    <None Include="wwwroot\Files\images\else\short_upico2.jpg" />
+    <None Include="wwwroot\Files\images\else\short_upico3.jpg" />
+    <None Include="wwwroot\Files\images\else\short_upico4.jpg" />
+    <None Include="wwwroot\Files\images\else\short_upico5.jpg" />
+    <None Include="wwwroot\Files\images\else\short_upico6.jpg" />
+    <None Include="wwwroot\Files\images\else\short_upico7.jpg" />
+    <None Include="wwwroot\Files\images\else\short_upico8.jpg" />
+    <None Include="wwwroot\Files\images\else\solution_ban.jpg" />
+    <None Include="wwwroot\Files\images\else\solution_bg-.jpg" />
+    <None Include="wwwroot\Files\images\else\sy_coope_next.png" />
+    <None Include="wwwroot\Files\images\else\sy_coope_nexth.png" />
+    <None Include="wwwroot\Files\images\else\sy_coope_pic1h.jpg" />
+    <None Include="wwwroot\Files\images\else\sy_coope_pic2h.jpg" />
+    <None Include="wwwroot\Files\images\else\sy_coope_pic3h.jpg" />
+    <None Include="wwwroot\Files\images\else\sy_coope_pic4h.jpg" />
+    <None Include="wwwroot\Files\images\else\sy_coope_pic5h.jpg" />
+    <None Include="wwwroot\Files\images\else\sy_coope_prev.png" />
+    <None Include="wwwroot\Files\images\else\sy_coope_prevh.png" />
+    <None Include="wwwroot\Files\images\else\sy_coope_xsj.png" />
+    <None Include="wwwroot\Files\images\else\sy_newspic1.jpg" />
+    <None Include="wwwroot\Files\images\else\sy_newspic2.jpg" />
+    <None Include="wwwroot\Files\images\else\sy_qabg.jpg" />
+    <None Include="wwwroot\Files\images\else\sy_qaico1.png" />
+    <None Include="wwwroot\Files\images\else\sy_qaico2.png" />
+    <None Include="wwwroot\Files\images\else\sy_service_pic.png" />
+    <None Include="wwwroot\Files\images\else\sy_service_pic1.png" />
+    <None Include="wwwroot\Files\images\else\sy_service_pic2.png" />
+    <None Include="wwwroot\Files\images\else\sy_service_pic3.png" />
+    <None Include="wwwroot\Files\images\else\sy_service_pic4.png" />
+    <None Include="wwwroot\Files\images\else\sy_service_pic5.png" />
+    <None Include="wwwroot\Files\images\else\sy_service_pic6.png" />
+    <None Include="wwwroot\Files\images\else\zhizhao_pic1.jpg" />
+    <None Include="wwwroot\Files\images\icon.ico" />
+    <None Include="wwwroot\Files\images\upload\pd\17041705144394352.JPEG" />
+    <None Include="wwwroot\Files\images\upload\pd\170417052456890860.JPEG" />
+    <None Include="wwwroot\Files\images\upload\pd\170417052512562141.JPG" />
+    <None Include="wwwroot\Files\images\upload\pd\170417053313288601.JPEG" />
+    <None Include="wwwroot\Files\images\upload\pd\170417053329339461.JPEG" />
+    <None Include="wwwroot\Files\images\upload\pd\170417053443156618.JPEG" />
+    <None Include="wwwroot\Files\images\upload\pd\170515105612358117.JPG" />
+    <None Include="wwwroot\Files\images\upload\pd\170515105844605683.JPG" />
+    <None Include="wwwroot\Files\images\upload\pd\170515110000480291.JPG" />
+    <None Include="wwwroot\Files\images\upload\pd\170515110119932809.JPG" />
+    <None Include="wwwroot\Files\images\upload\pd\170527040058264358.JPG" />
+    <None Include="wwwroot\Files\images\upload\pd\170623025204987436.JPG" />
+    <None Include="wwwroot\Files\images\upload\pd\17072510495938724.JPG" />
+    <None Include="wwwroot\Files\images\upload\pd\170831100459170835.JPG" />
+    <None Include="wwwroot\Files\images\upload\pd\170831101734924242.JPG" />
+    <None Include="wwwroot\Files\images\upload\pd\170831102910120631.JPG" />
+    <None Include="wwwroot\Files\images\upload\pd\170915023002507700.JPG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.12.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.ApplicationInsights.HostingStartup" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.MicrosoftAccount" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0-dev-00024" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="2.4.0" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspNetCore.Security.CAS\AspNetCore.Security.CAS.csproj" />
+    <ProjectReference Include="..\FDS.Common\FDS.Common.csproj" />
+    <ProjectReference Include="..\FDS.Model\FDS.Model.csproj" />
+  </ItemGroup>
+
+</Project>

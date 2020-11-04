@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+
+
+    <EditText
+        android:id="@+id/vi_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:imeOptions="flagNoExtractUi"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:textSize="38dp"
+        android:gravity="center"
+        android:layout_marginLeft="150px"
+        android:layout_marginRight="150px"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:padding="10sp"
+        android:background="@drawable/edit_background"
+        android:hint="Please input your name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/vi_editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vi_editText"
+
+        android:imeOptions="flagNoExtractUi"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:textSize="38dp"
+        android:gravity="center"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:padding="10sp"
+        android:background="@drawable/edit_background"
+        android:hint="Please input your phone number"
+        android:inputType="phone"
+        android:text="Name" />
+
+
+    <TextView
+        android:id="@+id/vi_editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="30sp"
+        android:layout_below="@id/vi_editText2"
+        android:inputType="textPersonName"
+        android:text="VISIT REASON" />
+
+
+    <EditText
+        android:id="@+id/vi_button2"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/vi_editText3"
+        android:inputType="none"
+        android:focusable="true"
+        android:layout_margin="50px"
+        android:padding="20px"
+        android:gravity="center"
+        android:clickable="false"
+        android:textColor="@drawable/select_color"
+        android:focusableInTouchMode="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg"
+        android:editable="false"
+        android:text="Personal Visit" />
+
+
+
+
+
+</RelativeLayout>
